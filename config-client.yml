@@ -1,1 +1,3 @@
-greeting: Hello unknown environment
+server:
+  port: 8080
+country: Netherlands
