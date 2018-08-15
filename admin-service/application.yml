@@ -9,13 +9,13 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 10
     health-check-url-path: /actuator/health
+    metadata-map:
+      user.name: dev  
+      user.password: dev
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761}/eureka/
-  metadata-map:
-    user.name: dev  
-    user.password: dev
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
 management:
   endpoints:
     web:
