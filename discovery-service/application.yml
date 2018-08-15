@@ -11,11 +11,11 @@ eureka:
     fetch-registry: false
     service-url:
       defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761/eureka/
-   instance:
-     health-check-url-path: /actuator/health
-     metadata-map:
-       user.name: dev
-       user.password: dev
+  instance:
+    health-check-url-path: /actuator/health
+    metadata-map:
+      user.name: dev
+      user.password: dev
 management:
   endpoints:
     web:
