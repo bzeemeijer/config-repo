@@ -1,6 +1,16 @@
 server:
   port: 8761
+spring:
+  security:
+    user:
+      name: dev
+      password: dev
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
