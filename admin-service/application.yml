@@ -14,9 +14,8 @@ eureka:
     serviceUrl:
       defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
   metadata-map:
-    user:
-      name: dev  
-      password: dev
+    user.name: dev  
+    user.password: dev
 management:
   endpoints:
     web:
