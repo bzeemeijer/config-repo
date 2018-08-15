@@ -24,6 +24,3 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-eureka:
-  instance:
-    
