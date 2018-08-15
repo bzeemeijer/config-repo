@@ -12,7 +12,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+      defaultZone: ${EUREKA_SERVICE_URL:http://${spring.security.user.name}:${spring.security.user.password}@localhost:8761}/eureka/
   metadata-map:
     user.name: dev  
     user.password: dev
